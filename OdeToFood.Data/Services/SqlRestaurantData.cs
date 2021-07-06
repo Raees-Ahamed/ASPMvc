@@ -47,7 +47,6 @@ namespace OdeToFood.Data.Services
         public void Update(Restaurant restaurant)
         {
             var entry = db.Entry(restaurant);
-
             entry.State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
         }
