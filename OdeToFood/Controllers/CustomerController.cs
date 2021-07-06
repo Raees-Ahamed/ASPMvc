@@ -33,7 +33,7 @@ namespace OdeToFood.Controllers
         public ActionResult Create(Customer customer) {
             if (ModelState.IsValid) { 
                 customerDb.CreateCustomer(customer);
-                return RedirectToAction("Details", new { id = customer.Id});
+                return RedirectToAction("Index");
             }
             return View();
         }
